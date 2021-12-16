@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dice Game</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div id="top-bar">
+      <h1>Dice Game</h1>
+    </div>
+  </header>
+
+  <main>
+    <div id="flex-container">
+        <div class="container-dicepad">
+            <div class="player-score">
+                <p class="score-text">Your Score</p><p id="player-score" class="score-number">0</p>
+            </div>
+            <div class="opponent-score">
+                <p class="score-text">Opponent's Score</p><p id="opponent-score" class="score-number">0</p>
+            </div>
+            <div class="dice-pad">
+                <button id="roll-btn" onclick="game.playTurn()">Roll</button>
+                <div id="who-roll">
+                    <p>Player</p>
+                    <p>Opponent</p>
+                </div>
+                <div id="dice-flex">
+                    <img src="./images/Dice_1.png" alt="display-dice" id="display-dice1" class="display-dice">
+                    <img src="./images/Dice_1.png" alt="display-dice" id="display-dice2" class="display-dice">
+                    <img src="./images/Dice_1.png" alt="display-dice" id="display-dice3" class="display-dice">
+                    <img src="./images/Dice_1.png" alt="display-dice" id="display-dice4" class="display-dice">
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <p>Player Rolls</p>
+            </div>
+            <div>
+                <p>Opponent Rolls</p>
+            </div>
+            <div class="container-diceroll">               
+                <div class="name">
+                    <p>Roll 1: <span class="round-score">0</span></p>
+                </div>
+                <div class="dice-one">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+                <div class="dice-two">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+            </div>
+            <div class="container-diceroll">
+                <div class="name">
+                    <p>Roll 1: <span class="round-score">0</span></p>
+                </div>
+                <div class="dice-one">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+                <div class="dice-two">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+            </div>
+            <div class="container-diceroll">
+                <div class="name">
+                    <p>Roll 2: <span class="round-score">0</span></p>
+                </div>
+                <div class="dice-one">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+                <div class="dice-two">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+            </div>
+            <div class="container-diceroll">
+                <div class="name">
+                    <p>Roll 2: <span class="round-score">0</span></p>
+                </div>
+                <div class="dice-one">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+                <div class="dice-two">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+            </div>
+            <div class="container-diceroll">
+                <div class="name">
+                    <p>Roll 3: <span class="round-score">0</span></p>
+                </div>
+                <div class="dice-one">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+                <div class="dice-two">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+            </div>
+            <div class="container-diceroll">
+                <div class="name">
+                    <p>Roll 3: <span class="round-score">0</span></p>
+                </div>
+                <div class="dice-one">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+                <div class="dice-two">
+                    <img src="./images/Dice_1.png" alt="dice" class="dice-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </main>
+
+  <div id="results-popup">
+    <div>
+      <p id="winner-text"></p>
+      <button id="close-popup" onclick="game.resetGame();">Play Again</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
